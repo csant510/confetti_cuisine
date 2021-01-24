@@ -8,6 +8,10 @@ app.use(express.urlencoded({
 );
 app.use(express.json());
 
+const layouts = require("express-ejs-layouts");
+app.set("view engine", "ejs");
+app.use(layouts);
+
 //controllers
 const homeController = require("./controllers/homeController");
 
