@@ -8,6 +8,9 @@ app.use(express.urlencoded({
 );
 app.use(express.json());
 
+//controllers
+const homeController = require("./controllers/homeController");
+
 app.get("/", (req, res) => {
     res.send("Welcome To Confettii Cusine!")
 });
