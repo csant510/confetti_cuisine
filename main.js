@@ -15,8 +15,10 @@ app.get("/", (req, res) => {
     res.send("Welcome To Confettii Cusine!")
 });
 
-
-
+//routes
+app.get("/courses", homeController.showCourses);
+app.get("/contact", homeController.showSignUp);
+app.post("/contact", homeController.postedSignUpForm);
 
 
 
