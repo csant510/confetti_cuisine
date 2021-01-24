@@ -17,8 +17,8 @@ app.use(express.static("public"));
 const homeController = require("./controllers/homeController");
 
 app.get("/", (req, res) => {
-    res.send("Welcome To Confettii Cusine!")
-});
+    res.render("index");
+  });
 
 //routes
 app.get("/courses", homeController.showCourses);
