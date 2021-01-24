@@ -11,6 +11,7 @@ app.use(express.json());
 const layouts = require("express-ejs-layouts");
 app.set("view engine", "ejs");
 app.use(layouts);
+app.use(express.static("public"));
 
 //controllers
 const homeController = require("./controllers/homeController");
